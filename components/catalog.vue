@@ -1,12 +1,12 @@
 <template>
 <b-container>
   <b-row>
-    <b-col>
+    <b-col lg='6' sm='12' class='d-flex justify-content-center align-items-start flex-column'>
       <h2>Ürün Kataloglarımız</h2>
       <p>Ürün kataloglarımızı iceleyerek hangi ürünlerin bayiisi olduğumuzu görebilir ve bizden ilgili ürün hakkında teklif isteyebilirsiniz.</p>
       <b-button>Ürün Kataloğu İçin Tıklayın</b-button>
     </b-col>
-    <b-col>
+    <b-col lg='6' sm='12'>
       <b-img-lazy class='catalog-img' v-bind="mainProps" src="/images/scientist-working-at-lab.jpg" alt="IŞanlı Medikal Katalog" />
     </b-col>
   </b-row>

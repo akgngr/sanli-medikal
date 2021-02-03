@@ -24,6 +24,9 @@
 
       <b-carousel-slide img-src="/images/slide/ULS-2100-floresan-immunoassay-analizor.png" />
 
+      <b-carousel-slide img-src="/images/slide/IH-500-kan-bankasi-test-sistemi.png" />
+
+      <b-carousel-slide img-src="/images/slide/Ih-1000-model-tam-otomatikimmunohemaotoloji-sistemleri.png" />
     </b-carousel>
   </div>
 </template>

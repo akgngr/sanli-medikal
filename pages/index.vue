@@ -5,6 +5,7 @@
       <About />
       <Bayiler />
       <Catalog />
+      <Contact />
     </div>
   </div>
 </template>
@@ -14,6 +15,7 @@ import Slideshow from "/components/slideshow"
 import About from "/components/about"
 import Bayiler from "~/components/bayiler"
 import Catalog from "~/components/catalog"
+import Contact from "~/components/contact"
 
 export default {
   layout: 'default',
@@ -21,7 +23,8 @@ export default {
     Slideshow,
     About,
     Bayiler,
-    Catalog
+    Catalog,
+    Contact
   },
   mounted() {
     this.$nextTick(() => {

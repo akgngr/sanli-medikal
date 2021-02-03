@@ -4,7 +4,7 @@
     <vue-horizontal-list :items="items" :options="options">
       <template v-slot:default="{ item }">
         <div class="item">
-          <p v-html='item.content'></p>
+          <span v-html='item.content'></span>
         </div>
       </template>
     </vue-horizontal-list>
@@ -36,8 +36,8 @@ export default {
       }),
       options: {
         responsive: [
-          { end: 576, size: 1 },
-          { start: 576, end: 768, size: 2 },
+          { end: 576, size: 2 },
+          { start: 576, end: 768, size: 3 },
           { start: 768, end: 992, size: 3 },
           { size: 4 },
         ],
