@@ -1,12 +1,11 @@
 <template>
   <div>
     <Slideshow />
-    <div class="container">
-      <About />
-      <Bayiler />
-      <Catalog />
-      <Contact />
-    </div>
+    <About />
+    <Bilgilendirme />
+    <Catalog />
+    <Bayiler />
+    <Contact />
   </div>
 </template>
 
@@ -16,6 +15,7 @@ import About from "/components/about"
 import Bayiler from "~/components/bayiler"
 import Catalog from "~/components/catalog"
 import Contact from "~/components/contact"
+import Bilgilendirme from "~/components/bilgilendirme"
 
 export default {
   layout: 'default',
@@ -24,7 +24,8 @@ export default {
     About,
     Bayiler,
     Catalog,
-    Contact
+    Contact,
+    Bilgilendirme
   },
   mounted() {
     this.$nextTick(() => {

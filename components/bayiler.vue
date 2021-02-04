@@ -1,6 +1,6 @@
 
 <template>
-  <div>
+  <b-container class='pt-5 pb-5'>
     <vue-horizontal-list :items="items" :options="options">
       <template v-slot:default="{ item }">
         <div class="item">
@@ -8,7 +8,7 @@
         </div>
       </template>
     </vue-horizontal-list>
-  </div>
+  </b-container>
 </template>
 
 <script>
@@ -39,7 +39,7 @@ export default {
           { end: 576, size: 2 },
           { start: 576, end: 768, size: 3 },
           { start: 768, end: 992, size: 3 },
-          { size: 4 },
+          { size: 5 },
         ],
       autoplay: {
         play: true,

@@ -25,10 +25,11 @@ export default {
   height: 100vh;
   width: 100vw;
   position: absolute;
-  background-color: #526488;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 20000;
 }
 .spinner {
   width: 40px;
