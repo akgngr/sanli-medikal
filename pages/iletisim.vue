@@ -29,7 +29,6 @@
           name='ContctForm'
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          @submit.prevent="handleSubmit"
         >
           <b-form-group
             id="input-group-1"
@@ -131,7 +130,7 @@ export default {
       axios.post(
         "/",
         this.encode({
-          "form-name": "contact",
+          "form-name": "ContctForm",
           ...this.form
         }),
         axiosConfig
