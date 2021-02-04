@@ -1,7 +1,7 @@
 <template>
 <div>
   <seo
-    title='İletişim | ŞAnlı Medikal'
+    title='İletişim | Şanlı Medikal'
     description='Bizimle iletişime geçin. Şanlı Medikal.'
   />
   <b-container class='pt-5 pb-5 mt-5 mb-5' fluid='xl'>
@@ -29,6 +29,7 @@
           name='ContctForm'
           data-netlify="true"
           data-netlify-honeypot="bot-field"
+          @submit.prevent="handleSubmit"
         >
           <input type="hidden" name="form-name" value="contact" />
           <b-form-group
@@ -38,7 +39,7 @@
           >
             <b-form-input
               id="input-1"
-              name="email"
+              v-model="form.email"
               type="email"
               placeholder="Eposta adresinizi giriniz."
               required
@@ -52,7 +53,7 @@
           >
             <b-form-input
               id="input-2"
-              name="phone"
+              v-model="form.phone"
               type="text"
               placeholder="Telefon numaranızı giriniz"
               required
@@ -62,7 +63,7 @@
           <b-form-group id="input-group-2" label="Adınız, soyadınız:" label-for="input-3">
             <b-form-input
               id="input-3"
-              name="name"
+              v-model="form.name"
               placeholder="Adınız ve soyadınızı girin"
               required
             ></b-form-input>
@@ -75,13 +76,13 @@
           >
             <b-form-textarea
               id="textarea"
-              name="message"
+              v-model="form.message"
               placeholder="Mesajınızı yazınız..."
               rows="3"
               max-rows="6"
             ></b-form-textarea>
           </b-form-group>
-          <b-button type="submit" variant="primary">Gönder</b-button>
+          <b-button type="submit" variant="primary" @cancel="$emit('cancel')">Gönder</b-button>
         </b-form>
       </b-col>
     </b-row>
@@ -112,7 +113,45 @@ export default {
       this.$nuxt.$loading.start()
       setTimeout(() => this.$nuxt.$loading.finish(), 1000)
     })
-  }
+  },
+  data: () => ({
+    form: {
+      name: '',
+      email: '',
+      phone: '',
+      message: '',
+    },
+  }),
+  methods: {
+    resetForm() {
+      this.$set(this.form, 'name', '');
+      this.$set(this.form, 'email', '');
+      this.$set(this.form, 'phone', '');
+      this.$set(this.form, 'message', '');
+    },
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`,
+        )
+        .join('&');
+    },
+    handleSubmit() {
+      const axiosConfig = {
+        header: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      };
+      this.form.speaker = this.speaker.name;
+      axios.post(
+        '/',
+        this.encode({
+          'form-name': 'contact-speaker',
+          ...this.form,
+        }),
+        axiosConfig,
+      );
+      this.resetForm();
+    },
+  },
 }
 </script>
 
