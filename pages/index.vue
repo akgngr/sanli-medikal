@@ -1,5 +1,9 @@
 <template>
   <div>
+    <seo
+      title='Şanlı Medikal'
+      description='Firmamız 1985 yılında Urfa Medikal adı altında bölgede ilk medikal sektöründe faaliyete girmiş olup 1992 yılında Şanlı Medikal olarak isim değişikliği yaparak yoluna devam etmiştir.'
+    />
     <Slideshow />
     <About />
     <Bilgilendirme />
@@ -16,6 +20,7 @@ import Bayiler from "~/components/bayiler"
 import Catalog from "~/components/catalog"
 import Contact from "~/components/contact"
 import Bilgilendirme from "~/components/bilgilendirme"
+import seo from '~/components/seo'
 
 export default {
   layout: 'default',
@@ -25,7 +30,8 @@ export default {
     Bayiler,
     Catalog,
     Contact,
-    Bilgilendirme
+    Bilgilendirme,
+    seo
   },
   mounted() {
     this.$nextTick(() => {

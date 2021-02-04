@@ -2,11 +2,11 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   loading: '~/components/loading.vue',
   head: {
-    title: 'nuxt-sanli-bootstrap',
+    title: 'Şanlı Medikal',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { name: 'viewport', content: 'width=device-width, initial-scale=0' },
+      { hid: 'description', name: 'description', content: 'Firmamız 1985 yılında Urfa Medikal adı altında bölgede ilk medikal sektöründe faaliyete girmiş olup 1992 yılında Şanlı Medikal olarak isim değişikliği yaparak yoluna devam etmiştir.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

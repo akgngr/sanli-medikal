@@ -1,5 +1,9 @@
 <template>
 <div>
+  <seo
+    title='İletişim | ŞAnlı Medikal'
+    description='Bizimle iletişime geçin. Şanlı Medikal.'
+  />
   <b-container class='pt-5 pb-5 mt-5 mb-5' fluid='xl'>
     <b-row>
       <b-col>
@@ -96,8 +100,12 @@
 </template>
 
 <script>
+import seo from '~/components/seo'
 export default {
   name: 'iletisim',
+  components: {
+    seo
+  },
   mounted() {
     this.$nextTick(() => {
       this.$nuxt.$loading.start()

@@ -1,5 +1,9 @@
 <template>
 <b-container fluid='xl' class='pt-5 mt-5 pb-5 mb-5'>
+  <seo
+    title='Bayisi Olduğumuz Ürünlerimiz | Şanlı Medikal'
+    description='Hem satışta hemde teknik serviste bayiisi olduğumuz ürünlerimiz'
+  />
   <b-row>
     <b-col lg='6' sm='12' class='p-3'>
       <b-card no-body class="overflow-hidden" style="max-width: 540px;">
@@ -114,12 +118,22 @@
       </b-card>
     </b-col>
   </b-row>
+  <b-row>
+    <bayiler />
+  </b-row>
 </b-container>
 </template>
 
 <script>
+import bayiler from '~/components/bayiler'
+import seo from '~/components/seo'
+
 export default {
   name: 'urunler',
+  components: {
+    bayiler,
+    seo
+  },
   mounted() {
     this.$nextTick(() => {
       this.$nuxt.$loading.start()
