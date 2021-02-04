@@ -103,6 +103,8 @@
 
 <script>
 import seo from '~/components/seo'
+import axios from 'axios'
+
 export default {
   name: 'iletisim',
   components: {
