@@ -21,7 +21,6 @@
         data-netlify-honeypot="bot-field"
         @submit.prevent="handleSubmit"
       >
-        <input type="hidden" name="form-name" value="contact">
         <b-form-group
           id="input-group-1"
           label="Eposta adresi:"
@@ -29,7 +28,7 @@
         >
           <b-form-input
             id="input-1"
-            v-model="form.email"
+            name="email"
             type="email"
             placeholder="Eposta adresinizi giriniz."
             required
@@ -43,7 +42,7 @@
         >
           <b-form-input
             id="input-1"
-            v-model="form.phone"
+            name="phone"
             type="text"
             placeholder="Telefon numaranızı giriniz"
             required
@@ -53,7 +52,7 @@
         <b-form-group id="input-group-2" label="Adınız, soyadınız:" label-for="input-2">
           <b-form-input
             id="input-2"
-            v-model="form.name"
+            name="name"
             placeholder="Adınız ve soyadınızı girin"
             required
           ></b-form-input>
@@ -66,14 +65,14 @@
         >
           <b-form-textarea
             id="textarea"
-            v-model="form.message"
+            name="message"
             placeholder="Mesajınızı yazınız..."
             rows="3"
             max-rows="6"
           ></b-form-textarea>
         </b-form-group>
 
-        <b-button type="submit" variant="outline-primary" @cancel="$emit('cancel')">Gönder</b-button>
+        <b-button type="submit" variant="outline-primary">Gönder</b-button>
       </b-form>
     </b-col>
   </b-row>
@@ -83,44 +82,28 @@
 <script>
 export default {
   name: 'contact',
-  data: () => ({
-    form: {
-      name: '',
-      email: '',
-      phone: '',
-      message: '',
-    },
-  }),
   methods: {
-    resetForm() {
-      this.$set(this.form, 'name', '');
-      this.$set(this.form, 'email', '');
-      this.$set(this.form, 'phone', '');
-      this.$set(this.form, 'message', '');
-    },
-    encode(data) {
+    encode (data) {
       return Object.keys(data)
         .map(
-          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`,
+          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
         )
-        .join('&');
+        .join("&");
     },
-    handleSubmit() {
+    handleSubmit () {
       const axiosConfig = {
-        header: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        header: { "Content-Type": "application/x-www-form-urlencoded" }
       };
-      this.form.speaker = this.speaker.name;
       axios.post(
-        '/',
+        "/",
         this.encode({
-          'form-name': 'contact-speaker',
-          ...this.form,
+          "form-name": "contact",
+          ...this.form
         }),
-        axiosConfig,
+        axiosConfig
       );
-      this.resetForm();
-    },
-  },
+    }
+  }
 }
 </script>
 
