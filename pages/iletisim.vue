@@ -25,11 +25,12 @@
       <b-col>
         <h2 class='pt-2 pb-3'>İletişim Formu</h2>
         <b-form
+          method="POST"
           name='ContctForm'
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="form-name" value="contact">
+          <input type="hidden" name="form-name" value="contact" />
           <b-form-group
             id="input-group-1"
             label="Eposta adresi:"
@@ -47,10 +48,10 @@
           <b-form-group
             id="input-group-1"
             label="Telefon Numaranız:"
-            label-for="input-1"
+            label-for="input-2"
           >
             <b-form-input
-              id="input-1"
+              id="input-2"
               name="phone"
               type="text"
               placeholder="Telefon numaranızı giriniz"
@@ -58,9 +59,9 @@
             ></b-form-input>
           </b-form-group>
 
-          <b-form-group id="input-group-2" label="Adınız, soyadınız:" label-for="input-2">
+          <b-form-group id="input-group-2" label="Adınız, soyadınız:" label-for="input-3">
             <b-form-input
-              id="input-2"
+              id="input-3"
               name="name"
               placeholder="Adınız ve soyadınızı girin"
               required

@@ -15,6 +15,7 @@
     <b-col xl='6' sm='12' class='pt-sm-0 pt-5 pb-sm-0 pb-5'>
       <h3 class='pb-2'>Bizimle İletişime Geçin</h3>
       <b-form
+        method="POST"
         name='ContctForm'
         data-netlify="true"
         data-netlify-honeypot="bot-field"
