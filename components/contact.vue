@@ -16,10 +16,11 @@
       <h3 class='pb-2'>Bizimle İletişime Geçin</h3>
       <b-form
         method="POST"
-        name='ContctForm'
+        name='iletisim'
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
+        <input type="hidden" name="form-name" value="iletisim" />
         <b-form-group
           id="input-group-1"
           label="Eposta adresi:"
@@ -82,29 +83,7 @@
 import axios from 'axios'
 
 export default {
-  name: 'contact',
-  methods: {
-    encode (data) {
-      return Object.keys(data)
-        .map(
-          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-        )
-        .join("&");
-    },
-    handleSubmit () {
-      const axiosConfig = {
-        header: { "Content-Type": "application/x-www-form-urlencoded" }
-      };
-      axios.post(
-        "/",
-        this.encode({
-          "form-name": "ContctForm",
-          ...this.form
-        }),
-        axiosConfig
-      );
-    }
-  }
+  name: 'contact'
 }
 </script>
 

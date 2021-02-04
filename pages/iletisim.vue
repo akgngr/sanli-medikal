@@ -26,10 +26,11 @@
         <h2 class='pt-2 pb-3'>İletişim Formu</h2>
         <b-form
           method="POST"
-          name='ContctForm'
+          name='iletisim'
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
+          <input type="hidden" name="form-name" value="iletisim" />
           <b-form-group
             id="input-group-1"
             label="Eposta adresi:"
@@ -114,28 +115,6 @@ export default {
       this.$nuxt.$loading.start()
       setTimeout(() => this.$nuxt.$loading.finish(), 1000)
     })
-  },
-  methods: {
-    encode (data) {
-      return Object.keys(data)
-        .map(
-          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-        )
-        .join("&");
-    },
-    handleSubmit () {
-      const axiosConfig = {
-        header: { "Content-Type": "application/x-www-form-urlencoded" }
-      };
-      axios.post(
-        "/",
-        this.encode({
-          "form-name": "ContctForm",
-          ...this.form
-        }),
-        axiosConfig
-      );
-    }
   }
 }
 </script>
