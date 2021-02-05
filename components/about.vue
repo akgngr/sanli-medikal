@@ -2,7 +2,7 @@
   <b-container fluid='xl' class='pt-5 pb-5 mt-5 mb-5'>
     <b-row>
       <b-col lg='6'>
-        <b-img-lazy fluid src='/images/microscope.jpg' alt='Şanlı Medikal Hakkımızda' />
+        <b-img-lazy fluid src='/images/microscope.webp' alt='Şanlı Medikal Hakkımızda' />
       </b-col>
       <b-col lg='6'>
         <h1 class='pb-2 pt-2'>HAKKIMIZDA</h1>
