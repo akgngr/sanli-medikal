@@ -31,7 +31,7 @@ export default {
         '/images/bayiler/werfen.png'
       ].map((i) => {
         return {
-          content: `<img class='image' src='${i}'>`,
+          content: `<b-img-lazy class='image lazyload' data-src='${i}' />`,
         };
       }),
       options: {

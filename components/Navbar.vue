@@ -1,7 +1,7 @@
 <template>
     <b-navbar toggleable="lg" type="dark" variant="secondary" sticky>
       <b-navbar-brand href="/">
-        <img width='55%' src='/trans_logo.svg' alt='Şanlı Medkial'>
+        <img width='55%' data-src='/trans_logo.svg' class="lazyload" alt='Şanlı Medkial'>
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>

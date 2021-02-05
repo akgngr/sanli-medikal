@@ -27,6 +27,11 @@
       <b-carousel-slide img-src="/images/slide/IH-500-kan-bankasi-test-sistemi.webp" />
 
       <b-carousel-slide img-src="/images/slide/Ih-1000-model-tam-otomatikimmunohemaotoloji-sistemleri.webp" />
+
+      <b-carousel-slide img-src="/images/slide/EUROBlot-one.webp" />
+
+      <b-carousel-slide img-src="/images/slide/EUROIMMUN-analyzer-I-2P.webp" />
+
     </b-carousel>
   </div>
 </template>

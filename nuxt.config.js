@@ -5,7 +5,7 @@ export default {
     title: 'Şanlı Medikal',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=0' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Firmamız 1985 yılında Urfa Medikal adı altında bölgede ilk medikal sektöründe faaliyete girmiş olup 1992 yılında Şanlı Medikal olarak isim değişikliği yaparak yoluna devam etmiştir.' }
     ],
     link: [
@@ -26,6 +26,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    'nuxt-lazysizes'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

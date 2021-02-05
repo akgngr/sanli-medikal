@@ -28,7 +28,7 @@
             <b-card-img src="/images/urunler/hologic-mmgrafi.webp" alt="Image" class="rounded-0 img-fluid"></b-card-img>
           </b-col>
           <b-col md="6">
-            <b-card-body title="Hologic Mmgrafi">
+            <b-card-body title="Hologic Mamografi">
               <b-card-text>
                 <a target="_blank" href='https://yadi.sk/i/OZ5QyHedKKDXlQ'>Hologic Mmgrafi Katalog</a>
               </b-card-text>
@@ -89,12 +89,28 @@
       <b-card no-body class="overflow-hidden" style="max-width: 540px;">
         <b-row no-gutters>
           <b-col md="6">
-            <b-card-img style='width: 50%' src="/images/urunler/GEM_3000.webp" alt="Image" class="rounded-0 img-fluid"></b-card-img>
+            <b-card-img src="/images/urunler/GEM_3000.webp" alt="Image" class="rounded-0 img-fluid"></b-card-img>
           </b-col>
           <b-col md="6">
             <b-card-body title="WERFEN3000">
               <b-card-text>
                 <a target="_blank" href='https://yadi.sk/i/xO20wLr9t43Wew'>WERFEN3000 Katalog</a>
+              </b-card-text>
+            </b-card-body>
+          </b-col>
+        </b-row>
+      </b-card>
+    </b-col>
+    <b-col lg='6' sm='12' class='p-3'>
+      <b-card no-body class="overflow-hidden" style="max-width: 540px;">
+        <b-row no-gutters>
+          <b-col md="6">
+            <b-card-img src="/images/urunler/EUROBlot-One.webp" alt="Image" class="rounded-0 img-fluid"></b-card-img>
+          </b-col>
+          <b-col md="6">
+            <b-card-body title="EUROBlot One">
+              <b-card-text>
+                <a target="_blank" href='https://yadi.sk/i/aBDsKCBpC_OM4A'>EUROBlot One Katalog</a>
               </b-card-text>
             </b-card-body>
           </b-col>
