@@ -6,7 +6,7 @@
   />
   <b-container class='pt-5 pb-5 mt-5 mb-5' fluid='xl'>
     <b-row>
-      <b-col>
+      <b-col sm='12' md='6'>
         <h1 class='pt-3 pb-5'>Bizimle İletişime Geçin</h1>
         <p><span><b>Adres:</b><a class='text-secondary' target='_blank' href='https://goo.gl/maps/NoZtN9mcZgDmXVJy7'> Akpıyar Mah. 4051 Sok. No 14/C/B Karaköprü/Şanlıurfa</a></span></p>
         <p>
@@ -22,7 +22,7 @@
           <span><b>Eposta 2:</b> <a class='text-secondary' href='mailto:infosanlimedikal@gmail.com'>infosanlimedikal@gmail.com</a></span>
         </p>
       </b-col>
-      <b-col>
+      <b-col sm='12' md='6'>
         <h2 class='pt-2 pb-3'>İletişim Formu</h2>
         <b-form
           method="POST"
@@ -121,5 +121,7 @@ export default {
 </script>
 
 <style scoped>
-
+.hidden{
+  display: none;
+}
 </style>
