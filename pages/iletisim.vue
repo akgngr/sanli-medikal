@@ -31,6 +31,7 @@
           data-netlify-honeypot="bot-field"
         >
           <input type="hidden" name="form-name" value="iletisim" />
+          <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field"></label></p>
           <b-form-group
             id="input-group-1"
             label="Eposta adresi:"
