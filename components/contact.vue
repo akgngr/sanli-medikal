@@ -21,6 +21,7 @@
         name='iletisim'
         data-netlify="true"
         data-netlify-honeypot="bot-field"
+        data-netlify-recaptcha="true"
       >
         <input type="hidden" name="form-name" value="iletisim" />
         <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field"></label></p>
@@ -74,7 +75,7 @@
             max-rows="6"
           ></b-form-textarea>
         </b-form-group>
-
+        <div data-netlify-recaptcha="true"></div>
         <b-button type="submit" variant="outline-primary">Gönder</b-button>
       </b-form>
     </b-col>
