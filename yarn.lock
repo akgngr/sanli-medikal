@@ -5276,10 +5276,10 @@ launch-editor@^2.2.1:
     chalk "^2.3.0"
     shell-quote "^1.6.1"
 
-lazysizes@^5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/lazysizes/-/lazysizes-5.3.0.tgz#e31b40bc2500b45483251681c898bbb3ded744ac"
-  integrity sha512-h5i4WPc2FdeTOUHBcU7eyNnOULPCC90wVho+SQTZRh9Q8lev6P0yFwKq8rvfMdBvsKsCyDQBdqoBng9FYbcR/g==
+lazysizes@^5.3.2:
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/lazysizes/-/lazysizes-5.3.2.tgz#27f974c26f5fcc33e7db765c0f4930488c8a2984"
+  integrity sha512-22UzWP+Vedi/sMeOr8O7FWimRVtiNJV2HCa+V8+peZOw6QbswN9k58VUhd7i6iK5bw5QkYrF01LJbeJe0PV8jg==
 
 loader-runner@^2.3.1, loader-runner@^2.4.0:
   version "2.4.0"
@@ -6050,12 +6050,12 @@ num2fraction@^1.2.2:
   resolved "https://registry.yarnpkg.com/num2fraction/-/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
   integrity sha1-b2gragJ6Tp3fpFZM0lidHU5mnt4=
 
-nuxt-lazysizes@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/nuxt-lazysizes/-/nuxt-lazysizes-1.2.0.tgz#329a3649199845a891c7e2ea31ac5ad86a953260"
-  integrity sha512-fIn6nG072KZFljpZctXxKhmgh1pckQF8lv2Wa5kom6fKY5t8+qFVv02MwSsftuXlXnByFAXMFtGqMtMi0mT6ug==
+nuxt-lazysizes@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/nuxt-lazysizes/-/nuxt-lazysizes-1.4.2.tgz#deda9be8e9a7668760ae1de56f2dfb83d1f4f980"
+  integrity sha512-KM+oEe6BwPX8GiFM5B8JlX49kIJqXI6m5jvZhYe+CJV1RD1aTEd+wUzwAwxPIDFLS5ZvpVR7E7yM7xLx9sSbog==
   dependencies:
-    lazysizes "^5.3.0"
+    lazysizes "^5.3.2"
 
 nuxt@^2.14.12:
   version "2.14.12"
