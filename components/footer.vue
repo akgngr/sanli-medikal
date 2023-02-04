@@ -27,7 +27,7 @@
     <span class='pb-5'></span>
     <hr />
     <b-container fluid class='pt-1 pb-3'>
-      <small>Tüm hakları saklıdır. © Şanlı Medikal - {{ this.toyear }}, design by <a target='_blank' href="https://akgngr.github.com">akgngr</a> </small>
+      <small>Tüm hakları saklıdır. © Şanlı Medikal - {{ this.toyear }}, design by <a target='_blank' href="https://akgngr.com">akgngr</a> </small>
     </b-container>
   </footer>
 </template>
