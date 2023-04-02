@@ -16,7 +16,9 @@
     >
       <b-carousel-slide img-src="/images/slide/akıllı-kalite-yonetimi.webp" />
 
+      <!--
       <b-carousel-slide img-src="/images/slide/dl-kan-kultur-sistemleri.webp" />
+      -->
 
       <b-carousel-slide img-src="/images/slide/EURORealTime-SARS-CoV-2.webp" />
 
